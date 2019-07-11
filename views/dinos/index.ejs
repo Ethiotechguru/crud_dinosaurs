@@ -1,0 +1,8 @@
+<h3>This are all of the dinos we can GET</h3>
+<a href="/dinosaurs/new">Add a Dino</a>---|---   <a href="/">Back To Home</a>
+
+<ul>
+    <% dinosaurs.forEach(function(dinosaur){%>
+        <li><a href="/dinosaurs/<%=dinosaur.id%>"><%= dinosaur.name %></a></li>
+    <%})%>
+</ul>
